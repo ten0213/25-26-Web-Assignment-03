@@ -1,0 +1,23 @@
+/* 화면 전체 기본 스타일 */
+:root {
+  --bg: #eff2dd;
+  --panel: #e0ccc9;
+  --text: #47323d;
+  --muted: #47323d;
+  --primary: rgb(164, 176, 169);
+  --primary-hover: rgb(122, 131, 126);
+  --danger: rgb(164, 176, 169);
+  --danger-hover: rgb(122, 131, 126);
+  --border: #d4bfbf;
+
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+button, input, select { font: inherit; }

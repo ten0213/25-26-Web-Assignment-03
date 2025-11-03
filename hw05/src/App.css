@@ -1,0 +1,117 @@
+.container {
+  max-width: 920px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 28px;
+}
+
+.tip {
+  margin-top: 16px;
+  color: var(--muted);
+}
+
+/* Form */
+.form {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+
+  display: flex;           
+  flex-direction: column;  
+  gap: 12px;    
+}
+
+.form .row {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 12px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.form input, .form select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgb(189, 202, 194);
+  color: var(--text);
+}
+
+button.primary {
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+button.primary:hover { background: var(--primary-hover); }
+
+/* List */
+.empty {
+  margin: 24px 0;
+  color: var(--muted);
+}
+
+.list {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 4px 0; }
+
+.pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 12px;
+  color: var(--muted);
+  margin-right: 6px;
+}
+
+button.danger {
+  background: var(--danger);     
+  border: 1px solid var(--danger);
+  color: white;                  
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button.danger:hover { 
+  background: var(--danger-hover); 
+  border-color: var(--danger-hover); 
+  color: white; }
+
+@media (max-width: 640px) {
+  .form .row { grid-template-columns: 1fr; }
+}
